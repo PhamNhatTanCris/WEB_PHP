@@ -3,9 +3,6 @@ body {
     padding: 0;
     /* background-image: url(../images/background_body.jpg); */
 }
-a {
-    text-decoration: none;
-}
 
 .wrapper {
     height: auto;
@@ -35,74 +32,39 @@ a {
 .menu_list {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
-}
-.menu_list-left li a:hover,
-.menu_list-right li a:hover {
-    color: #fff;
 }
 ul.menu_list-left {
     display: flex;
     list-style: none;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0;
 }
-ul.menu_list-left li {
+li {
     margin: 0 20px;
     /* color: #fff; */
 }
 ul.menu_list-left li a {
-    color: #ccc;
+    color:#fff;
 }
-ul.menu_list-left li > .menu_danhmuc {
+/* ul.menu_list li > .menu_danhmuc {
     display: none;
     list-style: none;
-    background-color: #fff;
-    padding-left: 0;
-    margin-top: 10px;
-    /* padding: 0 10px; */
 }
-ul.menu_list-left li > .menu_danhmuc a {
-    color: #000;
-    text-decoration: none;
-}
-ul.menu_list-left li > .menu_danhmuc li {
-    padding: 10px;
-    text-align: left;
-    margin: 0;
-}
-ul.menu_list-left li > .menu_danhmuc li:hover {
-    background-color: #999;
-}
-ul.menu_list-left li:hover .menu_danhmuc {
+ul.menu_list li:hover .menu_danhmuc {
     display: block;
     position: absolute;
 }
-ul.menu_list-right {
-    display: flex;
-    justify-content: space-between;
+ul.menu_list {
+    position: relative;
+    margin: 0 auto;
     list-style: none;
-    align-items: center;
-    margin-right: 20px;
-    margin-bottom: 0;
+    line-height: 25px;
+    display: flex;
 }
-ul.menu_list-right li {
-    /* margin-right: 20px; */
-    margin: 0 20px;
-}
-ul.menu_list-right li a {
-    text-decoration: none;
-    color: #ccc;
-}
-input[type="text"] {
-    width: 400px;
-    height: 26px;
-}
-input[type="submit"] {
-    height: 32px;
-    width: 89px;
-    padding-left: 12px;
+ul.menu_list li {
+    border-radius: 5px;
+    margin: 7px;
+    padding: 5px;
+    /* background-color: #ccf5ff; */
 }
 
 ul.menu_list li:hover {
@@ -114,8 +76,7 @@ ul.menu_list li a {
     text-decoration: none;
     text-align: center;
     color: #fff;
-}
-*/
+} */
 /* MAIN */
 .main {
     height: auto;
@@ -156,20 +117,13 @@ ul.sidebar_list li a {
     height: 100%;
 }
 .new_product {
-    /* background-color: #ffccff;
-    border: 1px solid black; */
+    background-color: #ffccff;
+    border: 1px solid black;
     border-radius: 15px;
     margin-bottom: 10px;
 }
 .new_product h3 {
     text-align: center;
-}
-.show .product_list {
-    flex-wrap: wrap;
-}
-
-.show .product_list li {
-    width: 19%;
 }
 
 /* Hiển thị sản phẩm */
@@ -215,97 +169,25 @@ p.title_product {
 }
 
 /* FOOTER */
+.footer {
+    background: #ffccff;
+
+    height: 150px;
+    width: 100%;
+}
+.footer p {
+    text-align: center;
+}
 .clear {
     clear: both; /* khong cho do , gat cai float left */
 }
-.footer-dark {
-    padding: 50px 0;
-    color: #f0f9ff;
-    background-color: #282d32;
+.show {
+    width: 100%;
+    height: 100%;
 }
-
-.footer-dark h3 {
-    margin-top: 0;
-    margin-bottom: 12px;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.footer-dark ul {
-    padding: 0;
-    list-style: none;
-    line-height: 1.6;
-    font-size: 14px;
-    margin-bottom: 0;
-}
-
-.footer-dark ul a {
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.6;
-}
-
-.footer-dark ul a:hover {
-    opacity: 0.8;
-}
-
-@media (max-width: 767px) {
-    .footer-dark .item:not(.social) {
-        text-align: center;
-        padding-bottom: 20px;
-    }
-}
-
-.footer-dark .item.text {
-    margin-bottom: 36px;
-}
-
-@media (max-width: 767px) {
-    .footer-dark .item.text {
-        margin-bottom: 0;
-    }
-}
-
-.footer-dark .item.text p {
-    opacity: 0.6;
-    margin-bottom: 0;
-}
-
-.footer-dark .item.social {
-    text-align: center;
-}
-
-@media (max-width: 991px) {
-    .footer-dark .item.social {
-        text-align: center;
-        margin-top: 20px;
-    }
-}
-
-.footer-dark .item.social > a {
-    font-size: 20px;
-    width: 36px;
-    height: 36px;
-    line-height: 36px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
-    margin: 0 8px;
-    color: #fff;
-    opacity: 0.75;
-}
-
-.footer-dark .item.social > a:hover {
-    opacity: 0.9;
-}
-
-.footer-dark .copyright {
-    text-align: center;
-    padding-top: 24px;
-    opacity: 0.3;
-    font-size: 13px;
-    margin-bottom: 0;
+.show_new {
+    width: 80%;
+    height: 100%;
 }
 
 /* Mobie */

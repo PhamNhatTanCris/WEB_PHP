@@ -44,7 +44,6 @@
 					    padding: 0;
 					    margin: 0;
 					    list-style: none;
-						display:flex;justify-content: center;
 					}
 					ul.list_trang li {
 					    float: left;
@@ -65,6 +64,7 @@
 				$row_count = mysqli_num_rows($sql_trang);  
 				$trang = ceil($row_count/10);
 				?>
+				<p>Trang hiện tại : <?php echo $page ?>/<?php echo $trang ?> </p>
 				
 				<ul class="list_trang">
 

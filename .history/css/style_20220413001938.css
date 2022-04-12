@@ -35,7 +35,6 @@ a {
 .menu_list {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
 }
 .menu_list-left li a:hover,
 .menu_list-right li a:hover {
@@ -46,7 +45,6 @@ ul.menu_list-left {
     list-style: none;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0;
 }
 ul.menu_list-left li {
     margin: 0 20px;
@@ -85,7 +83,6 @@ ul.menu_list-right {
     list-style: none;
     align-items: center;
     margin-right: 20px;
-    margin-bottom: 0;
 }
 ul.menu_list-right li {
     /* margin-right: 20px; */

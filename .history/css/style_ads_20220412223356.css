@@ -28,7 +28,7 @@
     justify-content: center;
 }
 .manual-btn {
-    border: 5px solid rgb(255, 3, 3);
+    border: 5px solid black;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;

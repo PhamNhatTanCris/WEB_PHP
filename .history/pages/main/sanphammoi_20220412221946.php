@@ -15,7 +15,7 @@
                 <img src="admincp/modules/quanlysp/uploads/<?php echo $row['hinhanh'] ?>">
                 <p class="title_product"> <?php echo $row['tensanpham'] ?></p>
                 <p class="price_product">Giá: <?php echo number_format($row['giasanpham'],0,',','.').'vnd' ?></p>
-                <p style="text-align: center;"><?php echo "Xem chi tiết"?></p>
+                <p><?php echo $row['tendanhmuc']?></p>
             </a>
         </li>
     <?php

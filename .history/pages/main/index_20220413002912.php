@@ -44,7 +44,7 @@
 					    padding: 0;
 					    margin: 0;
 					    list-style: none;
-						display:flex;justify-content: center;
+						display:flex;justify-self: center;
 					}
 					ul.list_trang li {
 					    float: left;
