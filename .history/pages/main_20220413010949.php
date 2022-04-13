@@ -77,22 +77,22 @@
 
                     <div class="mySlides fade">
                         <div class="numbertext">1 / 3</div>
-                        <img src="images/1a.jpg" style="width:100%">
+                        <img src="img_nature_wide.jpg" style="width:100%">
                         <div class="text">Caption Text</div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext">2 / 3</div>
-                        <img src="images/2a.jpg" style="width:100%">
+                        <img src="img_snow_wide.jpg" style="width:100%">
                         <div class="text">Caption Two</div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext">3 / 3</div>
-                        <img src="images/4a.jpg" style="width:100%">
+                        <img src="img_mountains_wide.jpg" style="width:100%">
                         <div class="text">Caption Three</div>
                     </div>
-                </div>
+</div>
 <br>
 
                 <div style="text-align:center">
@@ -119,7 +119,7 @@
                 }
                 slides[slideIndex-1].style.display = "block";  
                 dots[slideIndex-1].className += " active";
-                setTimeout(showSlides, 4000); // Change image every 2 seconds
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
                 }
 </script>           
                         <?php

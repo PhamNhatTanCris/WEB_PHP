@@ -112,7 +112,7 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-    /* max-width: 1000px; */
+    max-width: 1000px;
     position: relative;
     margin: auto;
 }
@@ -166,9 +166,7 @@ img {
         opacity: 1;
     }
 }
-.fade:not(.show) {
-    opacity: 1 !important;
-}
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
     .text {

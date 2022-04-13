@@ -153,8 +153,7 @@ ul.sidebar_list li a {
 
 .maincontent img {
     width: 100%;
-    /* height: 100%; */
-    height: 600px;
+    height: 100%;
 }
 .new_product {
     /* background-color: #ffccff;
@@ -223,6 +222,11 @@ p.title_product {
     padding: 50px 0;
     color: #f0f9ff;
     background-color: #282d32;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    right: 0;
+    left: 0;
 }
 
 .footer-dark h3 {
