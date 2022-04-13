@@ -89,10 +89,6 @@ ul.menu_list-left li > .menu_danhmuc a {
     color: #000;
     text-decoration: none;
 }
-ul.menu_list-left li > .menu_danhmuc li:hover a {
-    color: #fff;
-    text-decoration: none;
-}
 ul.menu_list-left li > .menu_danhmuc li {
     padding: 10px;
     text-align: left;
@@ -100,6 +96,7 @@ ul.menu_list-left li > .menu_danhmuc li {
 }
 ul.menu_list-left li > .menu_danhmuc li:hover {
     background-color: #999;
+    color: #fff;
 }
 ul.menu_list-left li:hover .menu_danhmuc {
     display: block;
@@ -121,16 +118,14 @@ ul.menu_list-right li a {
     text-decoration: none;
     color: #ccc;
 }
-.menu-input-text {
+input[type="text"] {
     width: 400px;
-    padding-left: 8px;
-    height: 32px;
-    outline: none;
+    height: 26px;
 }
-
-.menu-input-submit {
-    height: 34px;
+input[type="submit"] {
+    height: 32px;
     width: 89px;
+    padding-left: 12px;
 }
 
 ul.menu_list li:hover {

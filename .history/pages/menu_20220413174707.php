@@ -29,8 +29,8 @@
                 </li>
                 <li> 
                     <Form method="POST" action="index.php?quanly=timkiem"> 
-                        <input type="text" class="menu-input-text" placeholder="Tìm kiếm....." name="tukhoa">
-                        <input type="submit" class="menu-input-submit" name="timkiem" value="Tìm Kiếm">
+                        <input type="text" placeholder="Tìm kiếm....." name="tukhoa">
+                        <input type="submit" name="timkiem" value="Tìm Kiếm">
                     </Form>
                 </li>
         </ul>

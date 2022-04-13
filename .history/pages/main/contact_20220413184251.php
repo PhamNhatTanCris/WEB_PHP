@@ -3,7 +3,7 @@
         margin: 0;
         padding: 0;
         background-color: #000;
-        /* padding-bottom: 100px; */
+        padding-bottom: 100px;
     }
 
     #contact {
@@ -111,7 +111,7 @@
     }
 
     .contact-text a:hover {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     }
 
@@ -256,7 +256,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <section id="contact">
   
-  <h1 class="section-header" style="color: #000">Contact</h1>
+  <h1 class="section-header">Contact</h1>
   
   <div class="contact-wrapper">
   

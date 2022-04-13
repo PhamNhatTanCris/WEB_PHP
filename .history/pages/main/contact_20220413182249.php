@@ -1,78 +1,78 @@
 <style>
     body {
-        margin: 0;
-        padding: 0;
-        background-color: #000;
-        /* padding-bottom: 100px; */
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    padding-bottom: 100px;
     }
 
     #contact {
-        width: 100%;
-        height: 100%;
+    width: 100%;
+    height: 100%;
     }
 
     .section-header {
-        text-align: center;
-        margin: 0 auto;
-        padding: 40px 0;
-        font: 300 60px 'Oswald', sans-serif;
-        color: #fff;
-        text-transform: uppercase;
-        letter-spacing: 6px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    font: 300 60px 'Oswald', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
     }
 
     .contact-wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 0 auto;
-        padding: 20px;
-        position: relative;
-        max-width: 840px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    max-width: 840px;
     }
 
     .form-horizontal {
-        /*float: left;*/
-        max-width: 400px;
-        font-family: 'Lato';
-        font-weight: 400;
+    /*float: left;*/
+    max-width: 400px;
+    font-family: 'Lato';
+    font-weight: 400;
     }
 
     .form-control, 
     textarea {
-        max-width: 400px;
-        background-color: #000;
-        color: #fff;
-        letter-spacing: 1px;
+    max-width: 400px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 1px;
     }
 
     .send-button {
-        margin-top: 15px;
-        height: 34px;
-        width: 400px;
-        overflow: hidden;
-        transition: all .2s ease-in-out;
+    margin-top: 15px;
+    height: 34px;
+    width: 400px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
     }
 
     .alt-send-button {
-        width: 400px;
-        height: 34px;
-        transition: all .2s ease-in-out;
+    width: 400px;
+    height: 34px;
+    transition: all .2s ease-in-out;
     }
 
     .send-text {
-        display: block;
-        margin-top: 10px;
-        font: 700 12px 'Lato', sans-serif;
-        letter-spacing: 2px;
+    display: block;
+    margin-top: 10px;
+    font: 700 12px 'Lato', sans-serif;
+    letter-spacing: 2px;
     }
 
     .alt-send-button:hover {
-        transform: translate3d(0px, -29px, 0px);
+    transform: translate3d(0px, -29px, 0px);
     }
 
     .direct-contact-container {
-        max-width: 400px;
+    max-width: 400px;
     }
 
     .contact-list {
@@ -111,7 +111,7 @@
     }
 
     .contact-text a:hover {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     }
 
@@ -251,12 +251,11 @@
         width: 99%;
     }
     }
-        
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <section id="contact">
   
-  <h1 class="section-header" style="color: #000">Contact</h1>
+  <h1 class="section-header">Contact</h1>
   
   <div class="contact-wrapper">
   
@@ -265,13 +264,13 @@
     <form id="contact-form" class="form-horizontal" role="form">
        
       <div class="form-group">
-        <div class="col-sm-12" style="padding: 0;">
+        <div class="col-sm-12">
           <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
         </div>
       </div>
 
       <div class="form-group">
-        <div class="col-sm-12 "style="padding: 0;">
+        <div class="col-sm-12">
           <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
         </div>
       </div>

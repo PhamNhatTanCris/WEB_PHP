@@ -121,14 +121,14 @@ ul.menu_list-right li a {
     text-decoration: none;
     color: #ccc;
 }
-.menu-input-text {
+ul.menu_list-right input[type="text"] {
     width: 400px;
     padding-left: 8px;
     height: 32px;
     outline: none;
 }
 
-.menu-input-submit {
+ul.menu_list-right input[type="submit"] {
     height: 34px;
     width: 89px;
 }

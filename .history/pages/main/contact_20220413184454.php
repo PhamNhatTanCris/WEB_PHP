@@ -111,7 +111,7 @@
     }
 
     .contact-text a:hover {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     }
 
