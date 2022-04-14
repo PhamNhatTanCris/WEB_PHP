@@ -27,7 +27,7 @@ a {
 
 /* MENU */
 .menu {
-    /* margin-top: 10px; */
+    margin-top: 10px;
     height: auto;
     border-radius: 5px;
     background-color: rgb(32, 33, 36);
@@ -369,7 +369,7 @@ p.title_product {
     }
     .maincontent {
         width: 100%;
-        /* margin-top: 5px; */
+        margin-top: 5px;
         margin-left: 5px;
         float: right;
     }

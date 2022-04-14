@@ -6,13 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style_detal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_cart.css">
     <link rel="stylesheet" href="css/style_ads.css">
@@ -22,7 +15,11 @@
     <title>Shop</title>
 </head>
 <body>
-    
+    <?php
+    session_start();
+    include("admincp/config/connect.php");
+    include("user/loginuser.php")
+    ?>
     <div class="wrapper">
         <?php
             session_start();

@@ -47,7 +47,7 @@
        </div>
     </form>
     </div> -->
-<div class="top_link"><a href="../index.php"><img src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download" alt="">Về trang chủ</a></div>
+<div class="top_link"><a href="BANDONGHO/index.php"><img src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download" alt="">Return home</a></div>
 <form class="login" action="" method="POST">
   <h2 style="text-align: center">ADMIN LOGIN</h2>
   <input type="text" placeholder="Username" name="usernamez">

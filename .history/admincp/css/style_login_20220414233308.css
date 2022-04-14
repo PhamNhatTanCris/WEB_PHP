@@ -52,13 +52,7 @@ body {
     font-size: 15px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 116px;
-}
-
-.top_link img {
-    width: 24px;
-    height: 24px;
+    width: 106px;
 }
 
 .login {

@@ -26,7 +26,7 @@
                             include("main/sanpham.php");                    
                         }elseif ($bientam=='dangnhap'){
                             // include("user/loginuser.php");
-                            header("Location:loginuser.php");                          
+                            header("Location:admincp/loginuser.php");                          
                         }elseif ($bientam=='thongtin'){ 
                             include("main/thongtin.php");
                         }elseif ($bientam=='timkiem'){ 

@@ -36,29 +36,13 @@ body {
 }
 
 .top_link {
-    position: absolute;
     height: 30px;
-    width: 200px;
-    left: -32px;
-    /* text-align: left; */
-    top: 32px;
-}
-.top_link a {
-    text-decoration: none;
-    color: rgb(255 255 255 / 100%);
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    font-size: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 116px;
-}
+    z-index: 1;
+    position: relative;
 
-.top_link img {
-    width: 24px;
-    height: 24px;
+    right: 12px;
+    width: 136px;
+    margin-top: 24px;
 }
 
 .login {

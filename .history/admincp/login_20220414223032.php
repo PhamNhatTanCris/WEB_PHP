@@ -29,7 +29,8 @@
     <link rel="stylesheet" href="css/style_login.css">
     <title>Login</title>
 </head>
-<body>
+<body id="particles-js">
+   
     <!-- <div class="warpper">
     <form action="" method="POST">
         <h1>LOGIN</h1>
@@ -47,13 +48,24 @@
        </div>
     </form>
     </div> -->
-<div class="top_link"><a href="../index.php"><img src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download" alt="">Về trang chủ</a></div>
-<form class="login" action="" method="POST">
-  <h2 style="text-align: center">ADMIN LOGIN</h2>
-  <input type="text" placeholder="Username" name="usernamez">
-  <input type="password" placeholder="Password" name="password">
-  <button type="submit" name="dangnhap">Login</button>
-</form>
+    <div class="animated bounceInDown">
+  <div class="container">
+    <span class="error animated tada" id="msg"></span>
+    <form name="form1" class="box" onsubmit="return checkStuff()">
+      <h4>Admin<span>Dashboard</span></h4>
+      <h5>Sign in to your account.</h5>
+        <input type="text" name="usernamez" placeholder="Email" autocomplete="off">
+        <i class="typcn typcn-eye" id="eye"></i>
+        <input type="password" name="password" placeholder="Passsword" id="pwd" autocomplete="off">
+        <input type="submit" value="Sign in" name="dangnhap" class="btn1">
+      </form>
+        <a href="#" class="dnthave">Don’t have an account? Sign up</a>
+  </div> 
+       <div class="footer">
+      <span>Made with <i class="fa fa-heart pulse"></i> <a href="https://www.google.de/maps/place/Augsburger+Puppenkiste/@48.360357,10.903245,17z/data=!3m1!4b1!4m2!3m1!1s0x479e98006610a511:0x73ac6b9f80c4048f"><a href="https://codepen.io/lordgamer2354">By Anees Khan</a></span>
+    </div>
+</div>
 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 </html>

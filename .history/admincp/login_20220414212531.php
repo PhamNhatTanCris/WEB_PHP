@@ -8,6 +8,7 @@
 		$row_nguoidung = mysqli_query($connect,$sql_nguoidung); 
         $count = mysqli_num_rows($row_nguoidung);
         
+	 
            if($count>0){
                 $_SESSION['dangnhap']=$taikhoan;
                 header("Location:index.php");
@@ -30,7 +31,8 @@
     <title>Login</title>
 </head>
 <body>
-    <!-- <div class="warpper">
+   
+    <div class="warpper">
     <form action="" method="POST">
         <h1>LOGIN</h1>
        <div class="taikhoan">
@@ -46,14 +48,8 @@
            <input type="submit" name="dangnhap" value="Đăng Nhập">
        </div>
     </form>
-    </div> -->
-<div class="top_link"><a href="../index.php"><img src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download" alt="">Về trang chủ</a></div>
-<form class="login" action="" method="POST">
-  <h2 style="text-align: center">ADMIN LOGIN</h2>
-  <input type="text" placeholder="Username" name="usernamez">
-  <input type="password" placeholder="Password" name="password">
-  <button type="submit" name="dangnhap">Login</button>
-</form>
+    </div>
 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 </html>

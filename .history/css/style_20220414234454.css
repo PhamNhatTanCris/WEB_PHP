@@ -369,7 +369,7 @@ p.title_product {
     }
     .maincontent {
         width: 100%;
-        /* margin-top: 5px; */
+        margin-top: 5px;
         margin-left: 5px;
         float: right;
     }
