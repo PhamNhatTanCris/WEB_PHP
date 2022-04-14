@@ -1,5 +1,15 @@
 
+<div class="login">
+    <?php
+        if(isset($_GET['quanly'])){
+            $bientam=$_GET['quanly'];
 
+        }else{
+            $bientam="";
+        }if($bientam=="dangnhap"){
+            include("main/dangnhap.php");      }
+    ?>
+</div>
 
 <div class="main">
             <?php
@@ -24,8 +34,6 @@
                             include("main/contact.php");
                         }elseif ($bientam=='sanpham'){ 
                             include("main/sanpham.php");                    
-                        }elseif ($bientam=='dangnhap'){
-                            include("main/dangnhap.php");                             
                         }elseif ($bientam=='thongtin'){ 
                             include("main/thongtin.php");
                         }elseif ($bientam=='timkiem'){ 

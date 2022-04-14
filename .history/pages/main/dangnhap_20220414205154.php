@@ -12,9 +12,7 @@
 			$_SESSION['email'] = $row_data['email'];
             $_SESSION['id_khachhang']= $row_data['id_khachhang'];
 			header("Location:index.php");
-		}elseif($taikhoan=='admin'){
-            header("Location:admincp/login.php");
-        }else{
+		}else{
 			$message = "Tài khoản mật khẩu không đúng";
             echo "<script type='text/javascript'>alert('$message');</script>";
         }

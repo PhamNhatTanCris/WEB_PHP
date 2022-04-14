@@ -1,6 +1,9 @@
 
 
-
+<?php
+    if ($bientam=='dangnhap'){ 
+        include("main/dangnhap.php");}
+?>
 <div class="main">
             <?php
                 #include ("sidebar/sidebar.php");
@@ -23,11 +26,11 @@
                         }elseif ($bientam=='contact'){ 
                             include("main/contact.php");
                         }elseif ($bientam=='sanpham'){ 
-                            include("main/sanpham.php");                    
-                        }elseif ($bientam=='dangnhap'){
-                            include("main/dangnhap.php");                             
+                            include("main/sanpham.php");
+                        
                         }elseif ($bientam=='thongtin'){ 
                             include("main/thongtin.php");
+
                         }elseif ($bientam=='timkiem'){ 
                             include("main/timkiem.php");
                             

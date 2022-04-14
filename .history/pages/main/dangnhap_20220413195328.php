@@ -15,8 +15,7 @@
 		}elseif($taikhoan=='admin'){
             header("Location:admincp/login.php");
         }else{
-			$message = "Tài khoản mật khẩu không đúng";
-            echo "<script type='text/javascript'>alert('$message');</script>";
+			echo '<p style="color:red">Mật khẩu hoặc Email sai ,vui lòng nhập lại.</p>';
         }
 	} 
 ?>
@@ -40,21 +39,15 @@
         .warpper form {
             background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
             padding: 20px;
-            border-radius:12px;
-            height:320px;
         }
         .warpper h1 {
             text-align: center;
             margin-bottom: 48px;
         }
-        .warpper .submit {
+        .warpper input {
             display: block;margin: 0 auto;
-            background-color: red;
-            color: #fff;
+            justify-content: center;
             margin-top: 24px;
-            padding: 12px;
-            border-radius:12px;
-            cursor: pointer;
         }
         .taikhoan {
             margin-bottom: 24px;
@@ -70,9 +63,6 @@
         .taikhoan input, .matkhau input {
             margin-top: 0;
             margin-left: 24px;
-        }
-        .text-form {
-            display: none;color: red;
         }
 
     </style>
@@ -92,9 +82,8 @@
             <input type="password" name="password">
         </div>
         <div>
-            <input class="submit" type="submit" name="dangnhap" value="Đăng Nhập">
+            <input type="submit" name="dangnhap" value="Đăng Nhập">
         </div>
-        <!-- <p class="text-form">Mật khẩu hoặc Email sai ,vui lòng nhập lại.</p> -->
         </form>
     </div>
     

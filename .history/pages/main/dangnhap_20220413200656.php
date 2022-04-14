@@ -15,8 +15,7 @@
 		}elseif($taikhoan=='admin'){
             header("Location:admincp/login.php");
         }else{
-			$message = "Tài khoản mật khẩu không đúng";
-            echo "<script type='text/javascript'>alert('$message');</script>";
+			echo '<p style="color:red">Mật khẩu hoặc Email sai ,vui lòng nhập lại.</p>';
         }
 	} 
 ?>

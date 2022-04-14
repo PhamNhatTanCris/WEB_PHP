@@ -15,8 +15,7 @@
 		}elseif($taikhoan=='admin'){
             header("Location:admincp/login.php");
         }else{
-			$message = "Tài khoản mật khẩu không đúng";
-            echo "<script type='text/javascript'>alert('$message');</script>";
+			echo '<p style="color:red">Mật khẩu hoặc Email sai ,vui lòng nhập lại.</p>';
         }
 	} 
 ?>
@@ -71,9 +70,6 @@
             margin-top: 0;
             margin-left: 24px;
         }
-        .text-form {
-            display: none;color: red;
-        }
 
     </style>
 </head>
@@ -94,7 +90,6 @@
         <div>
             <input class="submit" type="submit" name="dangnhap" value="Đăng Nhập">
         </div>
-        <!-- <p class="text-form">Mật khẩu hoặc Email sai ,vui lòng nhập lại.</p> -->
         </form>
     </div>
     

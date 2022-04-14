@@ -24,10 +24,11 @@
                             include("main/contact.php");
                         }elseif ($bientam=='sanpham'){ 
                             include("main/sanpham.php");                    
-                        }elseif ($bientam=='dangnhap'){
-                            include("main/dangnhap.php");                             
+                        }elseif ($bientam=='dangnhap'){ 
+                            include("main/dangnhap.php");
                         }elseif ($bientam=='thongtin'){ 
                             include("main/thongtin.php");
+
                         }elseif ($bientam=='timkiem'){ 
                             include("main/timkiem.php");
                             
