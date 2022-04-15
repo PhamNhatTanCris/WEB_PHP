@@ -20,7 +20,7 @@
                             include("main/giohang/cart.php");
                         }elseif ($bientam=='dangky'){ 
                             // include("main/dangky.php");
-                            header("Location:signin/signin.php");                          
+                            header("Location:user/signin/signin.php");                          
                         }elseif ($bientam=='contact'){ 
                             include("main/contact.php");
                         }elseif ($bientam=='sanpham'){ 

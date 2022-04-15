@@ -13,8 +13,8 @@
                 header("Location:index.php");
             }else{
                 $message = "Tài khoản mật khẩu không đúng";
-                echo "<script type='text/javascript'>alert('$message');</script>";
-                // header("Location:login.php");
+                echo "<p>Tài khoản mật khẩu không đúng</p>";
+                header("Location:login.php");
             }
        
 	}

@@ -13,8 +13,12 @@
                 header("Location:index.php");
             }else{
                 $message = "Tài khoản mật khẩu không đúng";
-                echo "<script type='text/javascript'>alert('$message');</script>";
+                echo "<script>
+                        var loginn = document.getQuerySelector('#login');
+                        loginn.innerHTML = '<p style='color:red'>Tài khoản mật khẩu không đúng</p>';
+                    </script>";
                 // header("Location:login.php");
+                
             }
        
 	}
@@ -54,6 +58,7 @@
   <input type="text" placeholder="Username" name="usernamez">
   <input type="password" placeholder="Password" name="password">
   <button type="submit" name="dangnhap">Login</button>
+  
 </form>
 
 </body>

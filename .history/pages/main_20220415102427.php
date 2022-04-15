@@ -19,15 +19,14 @@
                         }elseif ($bientam=='giohang'){ 
                             include("main/giohang/cart.php");
                         }elseif ($bientam=='dangky'){ 
-                            // include("main/dangky.php");
-                            header("Location:signin/signin.php");                          
+                            include("main/dangky.php");
                         }elseif ($bientam=='contact'){ 
                             include("main/contact.php");
                         }elseif ($bientam=='sanpham'){ 
                             include("main/sanpham.php");                    
                         }elseif ($bientam=='dangnhap'){
                             // include("user/loginuser.php");
-                            header("Location:user/loginuser.php");                          
+                            header("Location:loginuser.php");                          
                         }elseif ($bientam=='thongtin'){ 
                             include("main/thongtin.php");
                         }elseif ($bientam=='timkiem'){ 
