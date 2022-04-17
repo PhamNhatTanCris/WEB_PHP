@@ -1,0 +1,19 @@
+.info-header {
+    border-bottom: 1px #e3e3e3 solid;
+}
+.infor-main-text {
+    display: flex;
+    justify-content: space-between;
+}
+.infor-main-text label {
+    color: rgba(85, 85, 85, 0.8);
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    /* flex: 1; */
+    width: 15%;
+    text-align: right;
+}
+.infor-main-text span.infor-text-sql {
+    width: 85%;
+    margin-left: 24px;
+}

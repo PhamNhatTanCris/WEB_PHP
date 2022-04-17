@@ -3,37 +3,37 @@
          width: 100%;
          height: 100%;
          /* border: 1px solid black; */
-         text-align: center;
+         /* text-align: center; */
          border-radius: 15px;
-         /* display:flex;
-         justify-content:center; */
+         display:flex;
+         justify-content:center;
      }
-     /* .thongtin-info{
+     .thongtin-info{
          width: 30%;
      }
      .infor-text {
          display:flex;
          justify-content:space-between;
             align-items:center;
-     } */
+     }
  </style>
  
  <p>Thông tin cá nhân </p>
 <div class="thongtin">
     <p><?php
             if(isset($_SESSION['dangky'])){
-                echo 'Xin chào: '.'<span style="color:red">'.$_SESSION['dangky'].'</span>';
+                echo 'xin chào: '.'<span style="color:red">'.$_SESSION['dangky'].'</span>';
                 $id =$_SESSION['dangky'];
                 $sql_thongtin ="SELECT * FROM tbl_dangky WHERE taikhoan='$id' LIMIT 1";
                 $query_thongtin=mysqli_query($connect,$sql_thongtin);
                 
                 while($row=mysqli_fetch_array($query_thongtin)){         
     ?></p><br>
-        <p class="thongtin-p">Họ và tên : <?php echo $row['hovaten']  ?></p>
+        <!-- <p class="thongtin-p">Họ và tên : <?php echo $row['hovaten']  ?></p>
         <p class="thongtin-p">Email : <?php echo $row['email']  ?></p>
         <p class="thongtin-p">Địa chỉ : <?php echo $row['diachi']  ?></p>
-        <p class="thongtin-p">Số điện thoại : <?php echo $row['sodienthoai']  ?></p>
-        <!-- <div class="thongtin-info">
+        <p class="thongtin-p">Số điện thoại : <?php echo $row['sodienthoai']  ?></p> -->
+        <div class="thongtin-info">
             <div class="infor-text">
                 <span class="infor-text-span">Họ và tên: </span>
                 <span class="infor-text-sql"><?php echo $row['hovaten']  ?></span>
@@ -50,7 +50,7 @@
                 <span class="infor-text-span">Số điện thoại: </span>
                 <span class="infor-text-sql"><?php echo $row['sodienthoai']  ?></span>
             </div>
-        </div> -->
+        </div>
         
 
 

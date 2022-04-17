@@ -22,7 +22,7 @@
 <div class="thongtin">
     <p><?php
             if(isset($_SESSION['dangky'])){
-                echo 'Xin chào: '.'<span style="color:red">'.$_SESSION['dangky'].'</span>';
+                // echo 'Xin chào: '.'<span style="color:red">'.$_SESSION['dangky'].'</span>';
                 $id =$_SESSION['dangky'];
                 $sql_thongtin ="SELECT * FROM tbl_dangky WHERE taikhoan='$id' LIMIT 1";
                 $query_thongtin=mysqli_query($connect,$sql_thongtin);

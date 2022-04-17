@@ -3,10 +3,10 @@
          width: 100%;
          height: 100%;
          /* border: 1px solid black; */
-         text-align: center;
+         /* text-align: center; */
          border-radius: 15px;
-         /* display:flex;
-         justify-content:center; */
+         display:flex;
+         justify-content:center;
      }
      /* .thongtin-info{
          width: 30%;
