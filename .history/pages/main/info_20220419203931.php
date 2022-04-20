@@ -28,16 +28,14 @@
                         <?php 
                             echo ''.'<span style="color:#fff">'.$row['taikhoan'].'</span>';
                         ?></p>
-                    <p class="card-item-duty"><?php 
-                            echo ''.'<span >'.$row['hovaten'].'</span>';
-                        ?></p>
+                    <p class="card-item-duty">Front-End Developer</p>
                     <div class="social-media-list">
                         <a href="https://www.facebook.com/hoandz93/" class="social-media-item"><i class="fab fa-facebook facebook-icon"></i></a>
                         <a href="https://www.youtube.com/channel/UCnf-JhE6TgnZ4nWR-JElaiA" class="social-media-item"><i class="fab fa-youtube"></i></a>
                         <a href="https://www.instagram.com/tran.ngochoan24/" class="social-media-item"><i class="fab fa-instagram"></i></a>
                         <a href="https://github.com/HoanTiny" class="social-media-item"><i class="fab fa-github"></i></a>
                     </div>
-                    <!-- <div class="contact"><a href="mailto: thedevil0903@gmail.com" class="card-item-contact">Contact me</a></div> -->
+                    <div class="contact"><a href="mailto: thedevil0903@gmail.com" class="card-item-contact">Contact me</a></div>
                 </li>
             </ul>
         </div>

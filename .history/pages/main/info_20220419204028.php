@@ -28,9 +28,7 @@
                         <?php 
                             echo ''.'<span style="color:#fff">'.$row['taikhoan'].'</span>';
                         ?></p>
-                    <p class="card-item-duty"><?php 
-                            echo ''.'<span >'.$row['hovaten'].'</span>';
-                        ?></p>
+                    <p class="card-item-duty">Front-End Developer</p>
                     <div class="social-media-list">
                         <a href="https://www.facebook.com/hoandz93/" class="social-media-item"><i class="fab fa-facebook facebook-icon"></i></a>
                         <a href="https://www.youtube.com/channel/UCnf-JhE6TgnZ4nWR-JElaiA" class="social-media-item"><i class="fab fa-youtube"></i></a>

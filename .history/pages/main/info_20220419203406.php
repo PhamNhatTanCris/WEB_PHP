@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/info.css">
+</head>
+<body>
+<p><?php
+            if(isset($_SESSION['dangky'])){
+                // echo 'Xin chào: '.'<span style="color:red">'.$_SESSION['dangky'].'</span>';
+                $id =$_SESSION['dangky'];
+                $sql_thongtin ="SELECT * FROM tbl_dangky WHERE taikhoan='$id' LIMIT 1";
+                $query_thongtin=mysqli_query($connect,$sql_thongtin);
+                
+                while($row=mysqli_fetch_array($query_thongtin)){         
+    ?></p><br>
+    <div class="container-info">
+        <!-- <div class="sidebar-info">
+            <ul class="sidebar-list">
+                    <li class="sidebar-list-item">
+                        <img class="sidebar-avatar" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Tiffany-and-co-new-global-ambassador-blackpink-rose-4.jpg/800px-Tiffany-and-co-new-global-ambassador-blackpink-rose-4.jpg" alt="">
+                        <?php 
+                            echo ''.'<span style="color:red">'.$row['taikhoan'].'</span>';
+                        ?>
+                    </li>
+            </ul>
+        </div> -->
+        <div class="container">
+            <ul class="card-list">
+                <li class="card-item">
+                    <div class="card-item-img">
+                        <img  src="https://scontent.fhan3-1.fna.fbcdn.net/v/t1.6435-9/157852677_1639854009539301_6816323171281456412_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=XVa0LNTU2EsAX_R0DIB&_nc_ht=scontent.fhan3-1.fna&oh=e10dbaffbb6516a088232d98e0eb552f&oe=61CB24BE"></img>
+                    </div>
+                    <p class="card-item-name">Trần Ngọc Hoàn</p>
+                    <p class="card-item-duty">Front-End Developer</p>
+                    <div class="social-media-list">
+                        <a href="https://www.facebook.com/hoandz93/" class="social-media-item"><i class="fab fa-facebook facebook-icon"></i></a>
+                        <a href="https://www.youtube.com/channel/UCnf-JhE6TgnZ4nWR-JElaiA" class="social-media-item"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/tran.ngochoan24/" class="social-media-item"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/HoanTiny" class="social-media-item"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="contact"><a href="mailto: thedevil0903@gmail.com" class="card-item-contact">Contact me</a></div>
+                </li>
+                <li class="card-item">
+                    <div class="card-item-img">
+                        <img  src="https://scontent.fhan3-1.fna.fbcdn.net/v/t1.6435-9/157852677_1639854009539301_6816323171281456412_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=XVa0LNTU2EsAX_R0DIB&_nc_ht=scontent.fhan3-1.fna&oh=e10dbaffbb6516a088232d98e0eb552f&oe=61CB24BE"></img>
+                    </div>
+                    <p class="card-item-name">Trần Ngọc Hoàn</p>
+                    <p class="card-item-duty">Front-End Developer</p>
+                    <div class="social-media-list">
+                        <a href="https://www.facebook.com/hoandz93/" class="social-media-item"><i class="fab fa-facebook facebook-icon"></i></a>
+                        <a href="https://www.youtube.com/channel/UCnf-JhE6TgnZ4nWR-JElaiA" class="social-media-item"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/tran.ngochoan24/" class="social-media-item"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/HoanTiny" class="social-media-item"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="contact"><a href="mailto: thedevil0903@gmail.com" class="card-item-contact">Contact me</a></div>
+                </li>
+                <li class="card-item">
+                    <div class="card-item-img">
+                        <img  src="https://scontent.fhan3-1.fna.fbcdn.net/v/t1.6435-9/157852677_1639854009539301_6816323171281456412_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=XVa0LNTU2EsAX_R0DIB&_nc_ht=scontent.fhan3-1.fna&oh=e10dbaffbb6516a088232d98e0eb552f&oe=61CB24BE"></img>
+                    </div>
+                    <p class="card-item-name">Trần Ngọc Hoàn</p>
+                    <p class="card-item-duty">Front-End Developer</p>
+                    <div class="social-media-list">
+                        <a href="https://www.facebook.com/hoandz93/" class="social-media-item"><i class="fab fa-facebook facebook-icon"></i></a>
+                        <a href="https://www.youtube.com/channel/UCnf-JhE6TgnZ4nWR-JElaiA" class="social-media-item"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/tran.ngochoan24/" class="social-media-item"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/HoanTiny" class="social-media-item"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="contact"><a href="mailto: thedevil0903@gmail.com" class="card-item-contact">Contact me</a></div>
+                </li>
+            </ul>
+        </div>
+        <div class="wrapper-info">
+            <div class="info-header">
+                <h3>Hồ sơ của bạn</h3>
+                <p>Quản lý thông tin cá nhân của bạn</p>
+            </div>
+            <div class="infor-main">
+                <div class="infor-main-text">
+                    <label for="">Tên Đăng Nhập: </label>
+                    <span class="infor-text-sql"><?php echo $row['hovaten']  ?></span>
+                </div>
+                <div class="infor-main-text">
+                    <label for="">Email: </label>
+                    <span class="infor-text-sql"><?php echo $row['email']  ?> <a href="" style="font-size:12px">Thay đổi</a></span>
+                </div>
+                <div class="infor-main-text">
+                    <label for="">Địa Chỉ: </label>
+                    <span class="infor-text-sql"><?php echo $row['diachi']  ?></span>
+                </div>
+                <div class="infor-main-text">
+                    <label for="">Số Điện Thoại: </label>
+                    <span class="infor-text-sql"><?php echo $row['sodienthoai']  ?> <a href="" style="font-size:12px">Thay đổi</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php
+            }
+    }
+
+    ?>
+</body>
+</html>
