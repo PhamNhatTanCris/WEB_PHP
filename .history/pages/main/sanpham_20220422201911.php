@@ -47,7 +47,7 @@
                      Mưa phảng phất trong không gian ấm áp của mùa xuân, nhè nhẹ, nhè nhẹ. 
                      Mưa dần buông những hạt cuối cùng, vạn vật được mưa tắm mắt trở nên căng tràn sức sống. Cánh mai vàng nhờ thưởng thức hạt ngọc tinh túy của bầu trời mà tươi tắn hơn. 
                      Chồi non mơn mởn, xanh biếc. Nương lúa, bãi ngô của người nông dân cũng mướt xanh. Mưa xuân diệu kỳ còn mang đến cho lòng người niềm vui khoan khoái, yêu biết bao nhiêu những cơn mưa xuân tuyệt vời như thế.
-                  </p>
+   </p>
             </div>
             <div class="input-themcart">
                <i class="fa-solid fa-cart-plus"></i>

@@ -16,7 +16,7 @@
     if(isset($_POST['themgiohang'])&&isset($_POST['soluong'])){
 		//session_destroy();
 		$soluongsp = $_POST['soluong'];
-		$soluong = (int)$soluongsp;
+				$soluong = (int)$soluongsp;
 		$id=$_GET['idsanpham'];
 		// $soluong=1;
 		$sql ="SELECT * FROM tbl_sanpham WHERE id_sanpham='".$id."' LIMIT 1";

@@ -34,9 +34,7 @@ input.themgiohang {
 span.review-no {
     color: #ffe600;
     text-decoration: underline;
-    margin-right: 8px;
-    font-weight: bold;
-    font-size: 18px;
+    margin-right: 4px;
     /* text-decoration: blink; */
 }
 .rating {
@@ -114,9 +112,6 @@ p.soluong-sp-cosan {
 i.fa-solid.fa-cart-plus {
     margin-left: 12px;
     color: #fff;
-}
-.mota-p {
-    font-weight: bold;
 }
 
 /* Test */

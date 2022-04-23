@@ -31,14 +31,6 @@ input.themgiohang {
 .price span {
     color: #ffe600;
 }
-span.review-no {
-    color: #ffe600;
-    text-decoration: underline;
-    margin-right: 8px;
-    font-weight: bold;
-    font-size: 18px;
-    /* text-decoration: blink; */
-}
 .rating {
     display: flex;
     margin-top: 16px;
@@ -114,9 +106,6 @@ p.soluong-sp-cosan {
 i.fa-solid.fa-cart-plus {
     margin-left: 12px;
     color: #fff;
-}
-.mota-p {
-    font-weight: bold;
 }
 
 /* Test */

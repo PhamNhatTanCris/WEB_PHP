@@ -13,12 +13,10 @@
 
     
     //them 
-    if(isset($_POST['themgiohang'])&&isset($_POST['soluong'])){
+    if(isset($_POST['themgiohang'])){
 		//session_destroy();
-		$soluongsp = $_POST['soluong'];
-		$soluong = (int)$soluongsp;
 		$id=$_GET['idsanpham'];
-		// $soluong=1;
+		$soluong=1;
 		$sql ="SELECT * FROM tbl_sanpham WHERE id_sanpham='".$id."' LIMIT 1";
 		$query = mysqli_query($connect,$sql);
 		$row = mysqli_fetch_array($query);
@@ -26,7 +24,8 @@
 			$new_product=array(array('tensanpham'=>$row['tensanpham'],'id'=>$id,'soluong'=>$soluong,'giasanpham'=>$row['giasanpham'],'hinhanh'=>$row['hinhanh'],'masp'=>$row['masanpham']));
 			//kiem tra session gio hang ton tai
 			if(isset($_SESSION['cart'])&&isset($_POST['soluong'])){
-				
+				$soluongsp = $_POST['soluong'];
+				$soluong = (int)$soluongsp;
 				$found = false;
 				foreach($_SESSION['cart'] as $cart_item){
 					//neu du lieu trung

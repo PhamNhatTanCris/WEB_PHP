@@ -14,14 +14,12 @@
     width: 80%;
 }
 input.themgiohang {
-    /* margin-top: 32px; */
     border: none;
-    /* color: black; */
-    padding: 12px 24px;
-    font-size: 16px;
+    background: greenyellow;
+    color: black;
+    padding: 12px;
+    font-size: 15px;
     cursor: pointer;
-    color: #fff;
-    background-color: red;
 }
 
 .chitiet_sanpham {
@@ -29,15 +27,7 @@ input.themgiohang {
 }
 .checked,
 .price span {
-    color: #ffe600;
-}
-span.review-no {
-    color: #ffe600;
-    text-decoration: underline;
-    margin-right: 8px;
-    font-weight: bold;
-    font-size: 18px;
-    /* text-decoration: blink; */
+    color: #ff9f1a;
 }
 .rating {
     display: flex;
@@ -96,27 +86,6 @@ p.soluong-sp-cosan {
     margin-bottom: 0;
     margin-left: 24px;
     color: #999;
-}
-.soluong-sp-cosan-text {
-    color: #999;
-    margin-left: 4px;
-}
-.danhmuc {
-    margin-top: 24px;
-}
-.input-themcart {
-    width: 180px;
-    display: flex;
-    align-items: center;
-    background: red;
-    margin-top: 24px;
-}
-i.fa-solid.fa-cart-plus {
-    margin-left: 12px;
-    color: #fff;
-}
-.mota-p {
-    font-weight: bold;
 }
 
 /* Test */
