@@ -1,7 +1,10 @@
    
+    <p>Cart</p>
           
     <p><?php
-        if(isset($_SESSION['dangky'])){      
+        if(isset($_SESSION['dangky'])){
+            echo 'xin chào: '.'<span style="color:red">'.$_SESSION['dangky'].'</span>';
+        
         } 
   ?></p>
 
@@ -38,18 +41,18 @@
             <!-- ở đây lấy dữ liêu cart_item['masp'] từ themgiohang.php -->
             <td><?php echo $cart_item['masp']?></td>
             <td><?php echo $cart_item['tensanpham'] ?></td>
-            <td><img class="img-cart" src="admincp/modules/quanlysp/uploads/<?php echo $cart_item['hinhanh'] ?>"></td>
+            <td><img src="admincp/modules/quanlysp/uploads/<?php echo $cart_item['hinhanh'] ?>" width="100%" style="height:200px"></td>
 
             <td>
                 <div class="soluong-sp-dem">
                      <a class="soluong-sp-dem-icon" href="pages/main/giohang/suasoluong.php?cong=<?php echo $cart_item['id'] ?>"><i class="fa-solid fa-plus"></i></a>
-                     <input class="soluong-sp-input" type="text" name="soluong" value="<?php echo $cart_item['soluong'] ?>">                
+                     <input class="soluong-sp-input" type="text" name="soluong" value="<?php $cart_item['soluong'] ?>">                
                      <a class="soluong-sp-dem-icon" href="pages/main/giohang/suasoluong.php?tru=<?php echo $cart_item['id'] ?>"><i class="fa-solid fa-minus"></i></a>
                   </div>
             </td>
 
             <td><?php echo number_format($cart_item['giasanpham'],0,',','.') . ' VNĐ'?></td>
-            <td class="giasp-cart"><?php  echo number_format($thanhtien,0,',','.') . ' VNĐ' ?></td>
+            <td><?php  echo number_format($thanhtien,0,',','.') . ' VNĐ' ?></td>
             <td><a href="pages/main/giohang/xoasanpham.php?xoa=<?php echo $cart_item['id'] ?>">XÓA</a></td>
         </tr>
 
@@ -60,15 +63,15 @@
 
         <tr>
             <td colspan="8">
-                <p style="float: left;    color: red;font-weight: bold;font-size: 16px;"> Tổng tiền : <?php echo number_format($tongtien,0,',','.') . ' VNĐ'  ?></p>
-                <p style="float: right;margin-right: 28px;"><a href="pages/main/giohang/xoahetgiohang.php?xoatatca=xoahet">Xóa Hêt</a></p>
+                <p style="float: left;"> Tổng tiền : <?php echo number_format($tongtien,0,',','.') . ' VNĐ'  ?></p>
+                <p style="float: right;"><a href="pages/main/giohang/xoahetgiohang.php?xoatatca=xoahet">Xóa Hêt</a></p>
                 <div style="clear:both;"> </div>
 
                     <?php
                             if(isset($_SESSION['dangky'])){
                                 
                     ?>
-                            <p class="btn-dathang"><a class="btn-dathang-a" href="pages/main/thanhtoan/index.php?quanly=vanchuyen">Đặt hàng</a></p>
+                            <p><a href="pages/main/thanhtoan/index.php?quanly=vanchuyen">Đặt hàng</a></p>
                     <?php
                     }else{
                     

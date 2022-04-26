@@ -12,6 +12,11 @@
                 
             }
 
+    ?> 
+    <?php
+        $sql_chitiet ="SELECT * FROM tbl_sanpham,tbl_danhmuc WHERE tbl_sanpham.id_danhmuc=tbl_danhmuc.id_danhmuc  AND tbl_sanpham.id_sanpham='$_GET[id]' LIMIT 1";
+        $query_chitiet=mysqli_query($connect,$sql_chitiet);
+        while ($row_chitiet=mysqli_fetch_array($query_chitiet)){
     ?>
     <table border="0" style="width:100%;">
         <tr>
@@ -105,3 +110,6 @@
 
 
     </table>
+    <?php
+    }
+ ?>

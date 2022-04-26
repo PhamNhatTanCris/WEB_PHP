@@ -1,7 +1,8 @@
    
           
     <p><?php
-        if(isset($_SESSION['dangky'])){      
+        if(isset($_SESSION['dangky'])){
+        
         } 
   ?></p>
 
@@ -60,7 +61,7 @@
 
         <tr>
             <td colspan="8">
-                <p style="float: left;    color: red;font-weight: bold;font-size: 16px;"> Tổng tiền : <?php echo number_format($tongtien,0,',','.') . ' VNĐ'  ?></p>
+                <p style="float: left;"> Tổng tiền : <?php echo number_format($tongtien,0,',','.') . ' VNĐ'  ?></p>
                 <p style="float: right;margin-right: 28px;"><a href="pages/main/giohang/xoahetgiohang.php?xoatatca=xoahet">Xóa Hêt</a></p>
                 <div style="clear:both;"> </div>
 
@@ -68,7 +69,7 @@
                             if(isset($_SESSION['dangky'])){
                                 
                     ?>
-                            <p class="btn-dathang"><a class="btn-dathang-a" href="pages/main/thanhtoan/index.php?quanly=vanchuyen">Đặt hàng</a></p>
+                            <p><a href="pages/main/thanhtoan/index.php?quanly=vanchuyen">Đặt hàng</a></p>
                     <?php
                     }else{
                     

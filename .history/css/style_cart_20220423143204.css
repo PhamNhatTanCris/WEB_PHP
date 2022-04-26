@@ -127,25 +127,4 @@ input.soluong-sp-input {
     border: 1px solid #999;
     display: flex;
     align-items: center;
-    width: 106px;
-}
-td.giasp-cart {
-    color: red;
-}
-img.img-cart {
-    height: 120px;
-    width: 60%;
-    margin-top: 12px;
-}
-.btn-dathang {
-    margin-top: 21px;
-}
-.btn-dathang-a {
-    width: 100%;
-    padding: 12px;
-    background: red;
-    color: rgb(233, 233, 233);
-}
-.btn-dathang-a:hover {
-    color: #fff;
 }

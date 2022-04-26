@@ -140,12 +140,9 @@ img.img-cart {
 .btn-dathang {
     margin-top: 21px;
 }
-.btn-dathang-a {
+.btn.btn-dathang-a {
     width: 100%;
     padding: 12px;
     background: red;
-    color: rgb(233, 233, 233);
-}
-.btn-dathang-a:hover {
     color: #fff;
 }

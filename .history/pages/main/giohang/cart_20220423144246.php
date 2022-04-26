@@ -1,7 +1,10 @@
    
+    <p>Cart</p>
           
     <p><?php
-        if(isset($_SESSION['dangky'])){      
+        if(isset($_SESSION['dangky'])){
+            echo 'xin chào: '.'<span style="color:red">'.$_SESSION['dangky'].'</span>';
+        
         } 
   ?></p>
 
@@ -16,8 +19,8 @@
     <table border="0" style="width:100%;">
         <tr>
             <th>ID</th>
-            <th>Mã :</th>
-            <th>Tên</th>
+            <th>Tên :</th>
+            <th>Phân loại</th>
             <th>Hình</th>
             <th>Số lượng</th>
             <th>Giá :</th>
@@ -37,7 +40,7 @@
             <td><?php echo $i ?></td>
             <!-- ở đây lấy dữ liêu cart_item['masp'] từ themgiohang.php -->
             <td><?php echo $cart_item['masp']?></td>
-            <td><?php echo $cart_item['tensanpham'] ?></td>
+            <td><?php echo $row_chitiet['tendanhmuc'] ?></td>
             <td><img class="img-cart" src="admincp/modules/quanlysp/uploads/<?php echo $cart_item['hinhanh'] ?>"></td>
 
             <td>
@@ -60,15 +63,15 @@
 
         <tr>
             <td colspan="8">
-                <p style="float: left;    color: red;font-weight: bold;font-size: 16px;"> Tổng tiền : <?php echo number_format($tongtien,0,',','.') . ' VNĐ'  ?></p>
-                <p style="float: right;margin-right: 28px;"><a href="pages/main/giohang/xoahetgiohang.php?xoatatca=xoahet">Xóa Hêt</a></p>
+                <p style="float: left;"> Tổng tiền : <?php echo number_format($tongtien,0,',','.') . ' VNĐ'  ?></p>
+                <p style="float: right;"><a href="pages/main/giohang/xoahetgiohang.php?xoatatca=xoahet">Xóa Hêt</a></p>
                 <div style="clear:both;"> </div>
 
                     <?php
                             if(isset($_SESSION['dangky'])){
                                 
                     ?>
-                            <p class="btn-dathang"><a class="btn-dathang-a" href="pages/main/thanhtoan/index.php?quanly=vanchuyen">Đặt hàng</a></p>
+                            <p><a href="pages/main/thanhtoan/index.php?quanly=vanchuyen">Đặt hàng</a></p>
                     <?php
                     }else{
                     
