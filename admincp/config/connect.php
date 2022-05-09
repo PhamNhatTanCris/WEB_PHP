@@ -1,7 +1,7 @@
 <?php
     $severname="localhost";
     $username="root";
-    $password="";
+    $password="Lehung@181";
     $database="web_mumei_shop";
 
     $connect= new mysqli($severname,$username,$password,$database);

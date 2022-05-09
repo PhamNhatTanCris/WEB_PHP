@@ -24,15 +24,15 @@
     <?php
         while ($row=mysqli_fetch_array($query_show)){
     ?>
-        <li>
-            <a href="index.php?quanly=sanpham&id=<?php echo $row['id_sanpham'] ?>">
-                <img src="admincp/modules/quanlysp/uploads/<?php echo $row['hinhanh'] ?>">
-                <p class="title_product"> <?php echo $row['tensanpham'] ?></p>
-                <p class="price_product">Giá: <?php echo number_format($row['giasanpham'],0,',','.').'vnd' ?></p>
-                <p style="text-align: center;"><?php echo "Xem chi tiết"?></p>
-            </a>
+	<li>
+		<a href="index.php?quanly=sanpham&id=<?php echo $row['id_sanpham'] ?>">
+			<img src="admincp/modules/quanlysp/uploads/<?php echo $row['hinhanh'] ?>">
+			<p class="title_product"> <?php echo $row['tensanpham'] ?></p>
+			<p class="price_product">Giá: <?php echo number_format($row['giasanpham'],0,',','.').' VNĐ' ?></p>
+			<p style="text-align: center;"><?php echo "Xem chi tiết"?></p>
+		</a>
 
-        </li>
+	</li>
 
     <?php
         }

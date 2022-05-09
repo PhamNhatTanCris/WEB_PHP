@@ -8,7 +8,8 @@
     $query_cate =mysqli_query($connect,$sql_cate);
     $row_title =mysqli_fetch_array($query_cate);
 ?>
-<h3> Danh muc : 
+<p></p>
+<h5> Danh mục |  
     <?php 
             if(isset($row_title['tendanhmuc'])){
                 echo $row_title['tendanhmuc'];
@@ -17,7 +18,7 @@
             }
     ?>
 
-</h3>
+</h5>
 <ul class="product_list">
     <?php
         while($row_pro=mysqli_fetch_array($query_show)){
@@ -26,7 +27,8 @@
                         <a href="index.php?quanly=sanpham&id=<?php echo $row_pro['id_sanpham'] ?>">
                             <img src="admincp/modules/quanlysp/uploads/<?php echo $row_pro['hinhanh'] ?>">
                             <p class="title_product"> <?php echo $row_pro['tensanpham'] ?></p>
-                            <p class="price_product">Giá: <?php echo number_format($row_pro['giasanpham'],0,',','.').'vnd' ?></p>
+                            <p class="price_product">Giá: <?php echo number_format($row_pro['giasanpham'],0,',','.').' VNĐ' ?></p>
+                            <p style="text-align: center;"><?php echo "Xem chi tiết"?></p>
                         </a>
                     </li>
     <?php

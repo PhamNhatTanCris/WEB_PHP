@@ -39,8 +39,8 @@
                 if(isset($_SESSION['dangky'])){
                 ?>
                    
-                    <li><a href="index.php?quanly=thongtin"> Thông Tin</a></li>
-                    <li> <a href="index.php?dangxuat=1">Đăng xuât</a></li>
+                    <li><a href="index.php?quanly=thongtin"> Thông tin</a></li>
+                    <li> <a href="index.php?dangxuat=1">Đăng xuất</a></li>
                 <?php
                     }else{
                 ?>
