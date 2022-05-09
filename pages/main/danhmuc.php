@@ -26,8 +26,9 @@
                     <li> 
                         <a href="index.php?quanly=sanpham&id=<?php echo $row_pro['id_sanpham'] ?>">
                             <img src="admincp/modules/quanlysp/uploads/<?php echo $row_pro['hinhanh'] ?>">
-                            <p class="title_product"> <?php echo $row_pro['tensanpham'] ?></p>
-                            <p class="price_product">Giá: <?php echo number_format($row_pro['giasanpham'],0,',','.').' VNĐ' ?></p>
+                            <p></p>
+                            <h5 class="title_product"> <?php echo $row_pro['tensanpham'] ?></h5>
+                            <h5 class="price_product">Giá: <?php echo number_format($row_pro['giasanpham'],0,',','.').' VNĐ' ?></h5>
                             <p style="text-align: center;"><?php echo "Xem chi tiết"?></p>
                         </a>
                     </li>

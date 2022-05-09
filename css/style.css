@@ -217,12 +217,13 @@ ul.product_list li img {
 ul.product_list li {
     background-color: #ffffff;
     width: 25%;
-    border: 1px solid black;
+    border: 1px solid rgb(193, 193, 193);
     margin: 5px;
     float: left;
     border-radius: 5px;
     height: 420px;
     margin-bottom: 50px;
+    background:rgb(239, 239, 239);
 }
 ul.product_list li a {
     text-decoration: none;
@@ -230,13 +231,13 @@ ul.product_list li a {
 ul.product_list li img {
     width: 100%;
 }
-p.price_product {
+h5.price_product {
     text-align: center;
     color: red;
     font-size: 16px;
     font-weight: bold;
 }
-p.title_product {
+h5.title_product {
     text-align: center;
     color: #000;
     font-size: 16px;
