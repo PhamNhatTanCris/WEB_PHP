@@ -2,7 +2,7 @@
     $severname="localhost";
     $username="root";
     $password="";
-    $database="dongho";
+    $database="web_mumei_shop";
 
     $connect= new mysqli($severname,$username,$password,$database);
     if(mysqli_connect_errno()){

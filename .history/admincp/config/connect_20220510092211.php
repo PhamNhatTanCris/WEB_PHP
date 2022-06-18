@@ -2,7 +2,7 @@
     $severname="localhost";
     $username="root";
     $password="";
-    $database="dongho";
+    $database="watch";
 
     $connect= new mysqli($severname,$username,$password,$database);
     if(mysqli_connect_errno()){
