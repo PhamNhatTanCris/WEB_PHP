@@ -1,13 +1,10 @@
-
-
-
 <div class="main">
-            <?php
+    <?php
                 #include ("sidebar/sidebar.php");
             ?>
-            <div class="maincontent">
-              
-                <?php //lấy qiamly từ menu truyền vào bằng phuongư thức GET
+    <div class="maincontent">
+
+        <?php //lấy qiamly từ menu truyền vào bằng phuongư thức GET
                         if(isset($_GET['quanly'])){
                             $bientam=$_GET['quanly'];
 
@@ -41,50 +38,47 @@
 
 
 
-                <div class="silder">
-                        <div class="sildes">
-                            <input type="radio" name="radio_btn" id="radio1">
-                            <input type="radio" name="radio_btn" id="radio2">
-                            <input type="radio" name="radio_btn" id="radio3">
-                            <input type="radio" name="radio_btn" id="radio4">
-                            <div class="silde first">
-                                <img src="images/1a.jpg" alt="">
-                            </div>
-                            <div class="silde">
-                                <img src="images/2a.jpg" alt="">
-                            </div>
-                            <div class="silde">
-                                <img src="images/3a.jpg" alt="">
-                            </div>
-                            <div class="silde">
-                                <img src="images/4a.jpg" alt="">
-                            </div>
+        <div class="silder">
+            <div class="sildes">
+                <input type="radio" name="radio_btn" id="radio1">
+                <input type="radio" name="radio_btn" id="radio2">
+                <input type="radio" name="radio_btn" id="radio3">
+                <input type="radio" name="radio_btn" id="radio4">
+                <div class="silde first">
+                    <img src="images/1a.jpg" alt="">
+                </div>
+                <div class="silde">
+                    <img src="images/2a.jpg" alt="">
+                </div>
+                <div class="silde">
+                    <img src="images/3a.jpg" alt="">
+                </div>
+                <div class="silde">
+                    <img src="images/4a.jpg" alt="">
+                </div>
 
-                            <div class="navigation-auto">
-                                <div class="auto-btn1"></div>
-                                <div class="auto-btn2"></div>
-                                <div class="auto-btn3"></div>
-                                <div class="auto-btn4"></div>
-
-                            </div>
-
-                        
-                        </div>
-                        <div class="navigation-manual">
-                            <label for="radio1" class="manual-btn"></label>
-                            <label for="radio2" class="manual-btn"></label>
-                            <label for="radio3" class="manual-btn"></label>
-                            <label for="radio4" class="manual-btn"></label>
-                        </div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
 
                 </div>
-                        <?php
+
+
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+
+        </div>
+        <?php
                        
                         }
  ?>
-                
-            </div>
-        </div>
 
-
-
+    </div>
+</div>

@@ -102,7 +102,7 @@ p.soluong-sp-cosan {
     margin-left: 4px;
 }
 .danhmuc {
-    margin-top: 24px;
+    margin-top: 0 !important;
 }
 .input-themcart {
     width: 180px;
