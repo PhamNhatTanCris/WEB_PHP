@@ -4,25 +4,25 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./sign_in.css" />
+        <link rel="stylesheet" href="./sign_in.css"/>
         <title>FORM</title>
     </head>
     <body>
         <div class="main">
             <form action="" method="POST" class="form" id="form-1">
                 <h3 class="heading">Thành viên đăng ký</h3>
-                <p class="desc">Cùng nhau mua đồng hồ tại WATCH LUXURY ❤️</p>
+                <p class="desc">Cùng nhau mua đồng hồ tại đồng hồ MONA</p>
 
                 <div class="spacer"></div>
 
                 <div class="form-group">
                     <label for="fullname" class="form-label">Tên đầy đủ</label>
-                    <input id="fullname" name="hovaten" type="text" placeholder="VD: Hoan Tran" class="form-control" />
+                    <input id="fullname" name="hovaten" type="text" placeholder="VD: Nguyen Ngoc Quan" class="form-control" />
                     <span class="form-message"></span>
                 </div>
                 <div class="form-group">
                     <label for="fullname" class="form-label">Tên tài khoản</label>
-                    <input id="fullname" name="taikhoan" type="text" placeholder="VD: Hoan Tran" class="form-control" />
+                    <input id="fullname" name="taikhoan" type="text" placeholder="VD: quanleaderkhmt2" class="form-control" />
                     <span class="form-message"></span>
                 </div>
 

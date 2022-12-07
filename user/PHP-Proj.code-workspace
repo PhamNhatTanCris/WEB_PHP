@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "D:/PHP-Proj"
+		},
+		{
+			"path": "D:/WebFE/F8-shop"
+		},
+		{
+			"path": "D:/WebFE/TestWeb"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "TestWeb"
+	}
+}

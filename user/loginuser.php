@@ -33,51 +33,66 @@ if (isset($_POST['dangnhap'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Đăng nhập</title>
     <style>
+    body {
+        background-image: url("../images/Background.jpg");
+        background-repeat: repeat;
+        background-size: cover;
+        background-position-y: -50px;
+    }
     img {
         width: 100%;
     }
 
     .login {
-        height: 1000px;
+        height: 700px;
         width: 100%;
         /*background: radial-gradient(#653d84, #332042);*/
-        background: #99FFFF;
+        /* background: #cccccc;  */
         position: relative;
+        /* background-image: url("../images/Background.jpg");
+        background-repeat: repeat;
+        background-size: cover; */
+        /* background-attachment: fixed; */
+        display: flex;
     }
 
     .login_box {
-        width: 1050px;
+        width: 500px;
         height: 600px;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: #fff;
+        background: rgba(255, 255, 255, 0.6);
         border-radius: 10px;
-        box-shadow: 1px 4px 22px -8px #0004;
+        /* box-shadow: 1px 4px 22px -8px #0004; */
+        box-shadow: 0px 0px 10px 2px rgba(171, 79, 19, 0.8);
         display: flex;
         overflow: hidden;
     }
 
     .login_box .left {
-        width: 41%;
+        width: 100%;
         height: 100%;
         padding: 25px 25px;
+        background: rgba(255, 255, 255, 0.8);
 
     }
 
-    .login_box .right {
+    /* .login_box .right {
         width: 59%;
         height: 100%
-    }
+    } */
 
     .left .top_link a {
         color: #452A5A;
         font-weight: 400;
         display: flex;
         align-items: center;
+        color: black;
     }
 
     .left .top_link {
@@ -97,12 +112,16 @@ if (isset($_POST['dangnhap'])) {
     .left h3 {
         text-align: center;
         margin-bottom: 40px;
+        font-size: 30px;
+        color: rgb(171 79 19);
     }
 
     .left input {
         border: none;
         width: 80%;
-        margin: 15px 0px;
+        /* margin: 15px 0px; */
+        margin-top: 25px;
+        margin-bottom: 15px;
         border-bottom: 1px solid #4f30677d;
         padding: 7px 9px;
         width: 100%;
@@ -117,23 +136,30 @@ if (isset($_POST['dangnhap'])) {
     }
 
     .submit {
+        width: 100%;
+        font-size: 20px;
         border: none;
         padding: 15px 70px;
         border-radius: 8px;
         display: block;
         margin: auto;
-        margin-top: 120px;
-        background: #3366CC;
+        margin-top: 50px;
+        background: rgb(171 79 19);
         color: #fff;
         font-weight: bold;
         -webkit-box-shadow: 0px 9px 15px -11px rgba(88, 54, 114, 1);
         -moz-box-shadow: 0px 9px 15px -11px rgba(88, 54, 114, 1);
         box-shadow: 0px 9px 15px -11px rgba(88, 54, 114, 1);
+        cursor: pointer;
     }
+    /* .submit:hover{
+        border: 1px solid rgb(150, 79, 19);
+        background-color: rgb(150, 79, 19);
+    } */
 
 
 
-    .right {
+    /* .right {
         background: linear-gradient(212.38deg, rgba(255, 215, 0, 0.7) 0%, rgba(175, 70, 189, 0.71) 100%), url(https://luxshopping.vn/Uploads/Images/omega-20-7.png);
         color: #fff;
         position: relative;
@@ -169,13 +195,31 @@ if (isset($_POST['dangnhap'])) {
         left: 50%;
         bottom: 70px;
         transform: translate(-50%, 0%);
-    }
+    } */
 
     .top_link img {
         width: 28px;
         padding-right: 7px;
         /* margin-top: -3px; */
     }
+    form {
+        margin-bottom: 160px;
+    }
+
+    /* .form_input::placeholder{
+        color: rgba(171, 79, 19, 0.6);
+    } */
+    .form_group i{
+        color: rgb(171, 79, 19);
+        font-size: 20px;
+        padding-top: 5px;
+        padding-right: 10px;
+    }
+    .nv-signin{
+        padding-top: 5px;
+        text-align: center;
+    }
+   
     </style>
 </head>
 
@@ -189,13 +233,24 @@ if (isset($_POST['dangnhap'])) {
                 <div class="contact">
                     <form action="" method="POST">
                         <h3>ĐĂNG NHẬP</h3>
-                        <input type="text" name="taikhoan" placeholder="USERNAME">
-                        <input type="password" name="password" placeholder="PASSWORD">
-                        <button class="submit" name="dangnhap">ĐĂNG NHẬP</button>
+                        <!-- <div class="form_group">
+                            
+                            <i class="fas fa-user"></i>
+                            <input class="form_input" type="text" name="taikhoan" placeholder="Tài Khoản">
+                        </div>
+                        <div class="form_group">
+                            <i class="fas fa-key"></i>
+                            <input class="form_input" type="password" name="password" placeholder="Mật khẩu">
+                        </div>
+                        <button class="submit" name="dangnhap">Đăng nhập ngay</button> -->
+                        <input class="form_input" type="text" name="taikhoan" placeholder="Tài Khoản">
+                        <input class="form_input" type="password" name="password" placeholder="Mật khẩu">
+                        <button class="submit" name="dangnhap">Đăng nhập ngay</button>
+                        <a href="../signin/signin.php" class="nv-signin" >Đăng ký ngay nếu chưa có tài khoản</a>
                     </form>
                 </div>
             </div>
-            <div class="right">
+            <!-- <div class="right">
                 <div class="right-text">
                     <h2>Đồng hồ MONA</h2>
                     <h5>Cửa hàng uy tín số 1 Việt Nam</h5>
@@ -203,9 +258,29 @@ if (isset($_POST['dangnhap'])) {
                 <div class="right-inductor"><img
                         src="https://lh3.googleusercontent.com/fife/ABSRlIoGiXn2r0SBm7bjFHea6iCUOyY0N2SrvhNUT-orJfyGNRSMO2vfqar3R-xs5Z4xbeqYwrEMq2FXKGXm-l_H6QAlwCBk9uceKBfG-FjacfftM0WM_aoUC_oxRSXXYspQE3tCMHGvMBlb2K1NAdU6qWv3VAQAPdCo8VwTgdnyWv08CmeZ8hX_6Ty8FzetXYKnfXb0CTEFQOVF4p3R58LksVUd73FU6564OsrJt918LPEwqIPAPQ4dMgiH73sgLXnDndUDCdLSDHMSirr4uUaqbiWQq-X1SNdkh-3jzjhW4keeNt1TgQHSrzW3maYO3ryueQzYoMEhts8MP8HH5gs2NkCar9cr_guunglU7Zqaede4cLFhsCZWBLVHY4cKHgk8SzfH_0Rn3St2AQen9MaiT38L5QXsaq6zFMuGiT8M2Md50eS0JdRTdlWLJApbgAUqI3zltUXce-MaCrDtp_UiI6x3IR4fEZiCo0XDyoAesFjXZg9cIuSsLTiKkSAGzzledJU3crgSHjAIycQN2PH2_dBIa3ibAJLphqq6zLh0qiQn_dHh83ru2y7MgxRU85ithgjdIk3PgplREbW9_PLv5j9juYc1WXFNW9ML80UlTaC9D2rP3i80zESJJY56faKsA5GVCIFiUtc3EewSM_C0bkJSMiobIWiXFz7pMcadgZlweUdjBcjvaepHBe8wou0ZtDM9TKom0hs_nx_AKy0dnXGNWI1qftTjAg=w1920-h979-ft"
                         alt=""></div>
-            </div>
+            </div> -->
         </div>
     </section>
+<!-- <div class="login-box">
+    <h2>Login</h2>
+    <form>
+        <div class="user-box">
+        <input type="text" name="" required="">
+        <label>Username</label>
+        </div>
+        <div class="user-box">
+        <input type="password" name="" required="">
+        <label>Password</label>
+        </div>
+        <a href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Đăng nhập
+        </a>
+    </form>
+</div> -->
 </body>
 
 </html>
